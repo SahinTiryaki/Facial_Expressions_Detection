@@ -28,15 +28,18 @@ if run:
         if ret:
             # face alignment
             # face detection
-            face, len_face = extractFaces(frame)
+            face, bbox = extractFaces(frame)
 
             # no face or multiple faces
             if type(face)==str:
                 frame = cv2.putText(frame, face, (70,100), cv2.FONT_HERSHEY_SIMPLEX, 
                    1, (0, 0, 255), 2, cv2.LINE_AA)
             else:
-                if i %50 == 0:
-                    result = classify_face(face)          
+                frame = cv2.rectangle(frame, (bbox[0],bbox[1]), (bbox[2]+bbox[0],bbox[1]+bbox[3]), (0,255,0), 2)
+
+                if i %30 == 0:
+                    result = classify_face(face)       
+   
                     frame = cv2.putText(frame, facial_expressions[result], (70,100), cv2.FONT_HERSHEY_SIMPLEX, 
                     1, (0, 255, 0), 2, cv2.LINE_AA)
                     last_status = result
