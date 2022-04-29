@@ -22,6 +22,8 @@ Train veri setinde 92968 adet, validation setinde 17356 ve test veri setinde de 
   </ul>
   
   Arayüz olarak kullanımının uygun ve hızla geliştirilebilmesi nedeniyle streamlit (https://streamlit.io/) kullanılmıtır. Kameraya erişebilmek içinse opencv kullanıştır. Gelen her görüntü web arayüzünde sonuçlarıyla beraber gösterilecektir.
+  
+ **Modelin geliştirildiği notebooka erişebilmek için;** <br> https://github.com/SahinTiryaki/Facial_Expressions_Detection/blob/main/facial-expressions-classification.ipynb  <br> veya  <br>  https://www.kaggle.com/code/sahintiryaki/facial-expressions-classification
 
 ### Demo
 
