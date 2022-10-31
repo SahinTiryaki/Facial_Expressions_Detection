@@ -27,9 +27,7 @@ Train veri setinde 92968 adet, validation setinde 17356 ve test veri setinde de 
 
 ### Demo
 
-<div align="center">
-<img src="media/webInterface.gif" width="80%"/> 
-</div>
+
 <br>
 
 **Demo görüntüsünden de anlaşılacağı üzere veri setinin etiketlenmesinden kaynaklanan duygu karıştırması gerçekleşmektedir.  Bir model geliştirilirken başarısı sadece modelin iyi bir mimariye sahip olması veya veri sayısnın sayıca fazla olmasından dolayı değildir. Asıl önemli olan verilerin ve etiketlenmesinin olabildiğince kaliteli olmasıdır.  Bu çalışmadan sadece  veri sayısnın fazla olması değil kaliteli etiketlenmiş veri olması sonucuna ulaşılmıştır..**
